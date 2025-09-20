@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Reservas - Taxi Cristian</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Modal de selección de idioma -->
+  <div id="lang-modal" class="modal">
+    <div class="modal-content">
+      <h2>Selecciona tu idioma</h2>
+      <div class="lang-options">
+        <img src="https://flagcdn.com/w40/es.png" alt="Español" data-lang="es">
+        <img src="https://flagcdn.com/w40/gb.png" alt="English" data-lang="en">
+        <img src="https://flagcdn.com/w40/fr.png" alt="Français" data-lang="fr">
+        <img src="https://flagcdn.com/w40/de.png" alt="Deutsch" data-lang="de">
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Taxi Barcelona Ya</h1>
+      <nav class="nav">
+        <a href="#reservar">Reservar</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h2>Transporte seguro y puntual</h2>
+          <p>Taxistas profesionales y formales en Barcelona con años de experiencia. Pide tu taxi con antelación o ahora mismo. Con servicio 24/7 y conductor profesional.</p>
+          <a class="btn btn-primary" href="https://wa.me/34XXXXXXXXX?text=Hola%20quiero%20reservar%20un%20taxi" target="_blank">Reservar por WhatsApp</a>
+        </div>
+        <div class="hero-card whatsapp-card">
+          <h3>Reserva fácil</h3>
+          <p>Haz clic en el botón y envía tu solicitud directamente por WhatsApp. Indica:</p>
+          <ul>
+            <li>Tu nombre</li>
+            <li>Dirección de recogida</li>
+            <li>Destino</li>
+            <li>Fecha y hora</li>
+          </ul>
+          <a class="btn btn-primary" href="https://wa.me/34XXXXXXXXX?text=Hola%20quiero%20reservar%20un%20taxi" target="_blank">Abrir WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="container servicios">
+      <h3>Nuestros servicios</h3>
+      <div class="services-grid">
+        <div class="service">Traslados al aeropuerto</div>
+        <div class="service">Recogidas nocturnas</div>
+        <div class="service">Tours y rutas</div>
+        <div class="service">Servicios para empresas</div>
+      </div>
+    </section>
+
+    <section id="reservar" class="container extras">
+      <h3>Ventajas</h3>
+      <ul>
+        <li>Conductor profesional y amable</li>
+        <li>Vehículo limpio y seguro</li>
+        <li>Pago en efectivo o tarjeta</li>
+      </ul>
+    </section>
+
+    <section id="contacto" class="container contacto">
+      <h3>Contacto</h3>
+      <p>Teléfono: <a href="tel:+34XXXXXXXXX">+34 XXXXXXXXX</a></p>
+      <p>WhatsApp: <a href="https://wa.me/34XXXXXXXXX" target="_blank">+34 XXXXXXXXX</a></p>
+      <p>Email: <a href="mailto:taxicristian@example.com">taxicristian@example.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Taxi Barcelona ya — Reservas online</p>
+    </div>
+  </footer>
+
+  <!-- Google Translate oculto -->
+  <div id="google_translate_element" style="display:none;"></div>
+
+  <!-- Scripts -->
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script src="script.js"></script>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

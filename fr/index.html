@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Réservations - Taxi Cristian</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+  <!-- Modal -->
+  <div id="lang-modal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <h2>Sélectionnez votre langue</h2>
+      <div class="lang-options">
+        <a href="../index.html"><img src="https://flagcdn.com/w40/es.png" alt="Español"></a>
+        <a href="../en/index.html"><img src="https://flagcdn.com/w40/gb.png" alt="English"></a>
+        <a href="#"><img src="https://flagcdn.com/w40/fr.png" alt="Français"></a>
+        <a href="../de/index.html"><img src="https://flagcdn.com/w40/de.png" alt="Deutsch"></a>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Taxi Barcelona Ya</h1>
+      <nav class="nav">
+        <a href="#reservation">Réserver</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h2>Transport sûr et ponctuel</h2>
+          <p>Chauffeurs professionnels et fiables à Barcelone avec des années d'expérience. Réservez votre taxi à l'avance ou immédiatement. Service 24/7 avec chauffeur professionnel.</p>
+          <a class="btn btn-primary" href="https://wa.me/34XXXXXXXXX?text=Bonjour%20je%20veux%20réserver%20un%20taxi" target="_blank">Réserver via WhatsApp</a>
+        </div>
+        <div class="hero-card whatsapp-card">
+          <h3>Réservation facile</h3>
+          <p>Cliquez sur le bouton et envoyez votre demande directement via WhatsApp. Indiquez :</p>
+          <ul>
+            <li>Votre nom</li>
+            <li>Adresse de prise en charge</li>
+            <li>Destination</li>
+            <li>Date et heure</li>
+          </ul>
+          <a class="btn btn-primary" href="https://wa.me/34XXXXXXXXX?text=Bonjour%20je%20veux%20réserver%20un%20taxi" target="_blank">Ouvrir WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="container servicios">
+      <h3>Nos services</h3>
+      <div class="services-grid">
+        <div class="service">Transferts aéroport</div>
+        <div class="service">Prises en charge nocturnes</div>
+        <div class="service">Tours et itinéraires</div>
+        <div class="service">Services aux entreprises</div>
+      </div>
+    </section>
+
+    <section id="reservation" class="container extras">
+      <h3>Avantages</h3>
+      <ul>
+        <li>Chauffeur professionnel et sympathique</li>
+        <li>Véhicule propre et sûr</li>
+        <li>Paiement en espèces ou carte</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="container contacto">
+      <h3>Contact</h3>
+      <p>Téléphone : <a href="tel:+34XXXXXXXXX">+34 XXXXXXXXX</a></p>
+      <p>WhatsApp : <a href="https://wa.me/34XXXXXXXXX" target="_blank">+34 XXXXXXXXX</a></p>
+      <p>Email : <a href="mailto:taxicristian@example.com">taxicristian@example.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Taxi Barcelona ya — Réservations en ligne</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
