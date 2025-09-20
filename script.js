@@ -18,19 +18,19 @@ window.addEventListener("DOMContentLoaded", () => {
             // Redirigir a la página correspondiente
             switch(lang) {
                 case "es":
-                    window.location.href = "/index.html";
+                    window.location.href = "../index.html";
                     break;
                 case "en":
-                    window.location.href = "/en/index.html";
+                    window.location.href = "../en/index.html";
                     break;
                 case "fr":
-                    window.location.href = "/fr/index.html";
+                    window.location.href = "../fr/index.html";
                     break;
                 case "de":
-                    window.location.href = "/de/index.html";
+                    window.location.href = "../de/index.html";
                     break;
                 default:
-                    window.location.href = "/index.html";
+                    window.location.href = "../index.html";
             }
         });
     });
