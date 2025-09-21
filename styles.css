@@ -97,7 +97,7 @@ body {
 .service {
     background: #1f1f1f;
     border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 20px rgba(255, 214, 0, 0.5); 
     padding: 1.5rem;
     color: #e0e0e0;
     margin-top: 1rem;
