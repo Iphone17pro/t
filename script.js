@@ -50,3 +50,29 @@ function showSlides() {
   slides[slideIndex - 1].style.display = "block";
   setTimeout(showSlides, 4000); // cambia cada 4 segundos
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Selecciona el modal y el div "Servicios para empresas"
+    const empresaModal = document.getElementById('empresa-modal');
+    const btnEmpresa = document.querySelector('#servicios .service:last-child');
+    const closeEmpresa = document.querySelector('.close-empresa');
+
+    if (btnEmpresa && empresaModal && closeEmpresa) {
+        // Abrir modal al hacer click
+        btnEmpresa.addEventListener('click', () => {
+            empresaModal.style.display = 'flex';
+        });
+
+        // Cerrar modal con la X
+        closeEmpresa.addEventListener('click', () => {
+            empresaModal.style.display = 'none';
+        });
+
+        // Cerrar modal al hacer click fuera del contenido
+        window.addEventListener('click', (e) => {
+            if (e.target === empresaModal) {
+                empresaModal.style.display = 'none';
+            }
+        });
+    }
+});
